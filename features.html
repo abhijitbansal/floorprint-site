@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floorprint — Features</title>
+<meta name="description" content="Every Floorprint feature: LiDAR scanning, multi-room merge, measurements, furniture, CAD exports, iCloud sync — free and fully on-device.">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Floorprint">
+<meta property="og:title" content="Floorprint — every feature, free and on-device">
+<meta property="og:description" content="LiDAR scan to CAD floor plan: multi-room merge, measurements, furniture, PDF/DXF/STEP exports, iCloud sync. What competitors paywall, Floorprint ships free.">
+<meta property="og:url" content="https://abhijitbansal.github.io/floorprint-site/features.html">
+<meta property="og:image" content="https://abhijitbansal.github.io/floorprint-site/assets/demo/clip2-plan-exports.gif">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Floorprint — every feature, free and on-device">
+<meta name="twitter:image" content="https://abhijitbansal.github.io/floorprint-site/assets/demo/clip2-plan-exports.gif">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef;
+  --surface:#fffdf9;
+  --border:rgba(30,42,70,.13);
+  --border-strong:rgba(30,42,70,.3);
+  --text:#1c2438;
+  --text-dim:#5d6880;
+  --navy:#1e3a5f;
+  --navy-dim:rgba(30,58,95,.07);
+  --gold:#b8860b;
+  --gold-dim:rgba(184,134,11,.1);
+  --rose:#9f3a52;
+  --sage:#4a7c59;
+  --font-display:'Instrument Serif',Georgia,serif;
+  --font-body:'Source Sans 3',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#151a26;
+    --surface:#1d2433;
+    --border:rgba(200,215,240,.12);
+    --border-strong:rgba(200,215,240,.3);
+    --text:#e6eaf2;
+    --text-dim:#9aa6bd;
+    --navy:#7da7d9;
+    --navy-dim:rgba(125,167,217,.1);
+    --gold:#d9a93f;
+    --gold-dim:rgba(217,169,63,.12);
+    --rose:#d97a91;
+    --sage:#7fb78f;
+  }
+}
+*{box-sizing:border-box;margin:0;min-width:0}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.55;padding:52px 24px 90px}
+.wrap{max-width:1100px;margin:0 auto}
+header{max-width:760px;margin-bottom:14px}
+.kicker{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--font-display);font-size:clamp(38px,6vw,60px);font-weight:400;line-height:1.05;margin:10px 0 14px}
+h1 em{font-style:italic;color:var(--navy)}
+.lead{font-size:18px;color:var(--text-dim);max-width:640px}
+.lead b{color:var(--text)}
+
+.gifrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:36px 0 10px}
+.gifcard{border:1px solid var(--border);background:var(--surface);padding:10px;border-radius:4px}
+.gifcard img{width:100%;display:block;border-radius:2px}
+.gifcard figcaption{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);margin-top:8px;line-height:1.45}
+.gifcard figcaption b{color:var(--rose);font-weight:600}
+.gifnote{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);margin-bottom:40px}
+
+h2{font-family:var(--font-display);font-size:30px;font-weight:400;margin:46px 0 4px}
+.rule{height:1px;background:var(--border-strong);margin:6px 0 18px;position:relative}
+.rule::before{content:"";position:absolute;left:0;top:-1px;width:64px;height:3px;background:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:13px}
+.ve-card{border:1px solid var(--border);background:var(--surface);padding:15px 17px;border-radius:4px;position:relative}
+.ve-card h3{font-size:15.5px;font-weight:600;margin-bottom:4px;padding-right:46px}
+.ve-card p{font-size:13.5px;color:var(--text-dim)}
+.ve-card code{font-family:var(--font-mono);font-size:12px;background:var(--navy-dim);padding:1px 5px;border-radius:3px;color:var(--text)}
+.new{position:absolute;top:13px;right:13px;font-family:var(--font-mono);font-size:9.5px;font-weight:600;letter-spacing:.1em;background:var(--gold);color:var(--bg);padding:2px 7px;border-radius:2px}
+.pay{margin-top:9px;font-family:var(--font-mono);font-size:11px;color:var(--rose);line-height:1.5}
+.pay::before{content:"⃠ paywalled elsewhere · ";color:var(--rose);opacity:.7}
+.free{margin-top:9px;font-family:var(--font-mono);font-size:11px;color:var(--sage)}
+footer{margin-top:54px;border-top:1px solid var(--border);padding-top:14px;font-family:var(--font-mono);font-size:11.5px;color:var(--text-dim);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (prefers-reduced-motion: no-preference){
+  .ve-card,.gifcard{animation:rise .45s ease both}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav style="font-family:var(--font-mono);font-size:12px;margin-bottom:34px;display:flex;gap:18px">
+  <a href="index.html" style="color:var(--text-dim);text-decoration:none">← Home</a>
+  <a href="privacy.html" style="color:var(--text-dim);text-decoration:none">Privacy</a>
+  <a href="support.html" style="color:var(--text-dim);text-decoration:none">Support</a>
+</nav>
+
+<header>
+  <div class="kicker">Floorprint · features</div>
+  <h1>Every room you scan,<br><em>yours</em> — on every device.</h1>
+  <p class="lead">iPhone + iPad LiDAR scanning, a Mac companion, and a mini-CAD — <b>free, no accounts, processing never leaves the device.</b> Rose monospace lines mark what Polycam, magicplan, RoomScan Pro, or CubiCasa charge for. Gold badges are the newest additions.</p>
+</header>
+
+<div class="gifrow">
+  <figure class="gifcard">
+    <img src="assets/demo/clip1-home.gif" alt="Onboarding tour and redesigned home screen">
+    <figcaption>Onboarding → home with live plan thumbnails. <b>Polycam free tier: scan but barely export.</b></figcaption>
+  </figure>
+  <figure class="gifcard">
+    <img src="assets/demo/clip2-plan-exports.gif" alt="Plan view modes and export menu">
+    <figcaption>2D → parametric → 3D, then the export menu. <b>Floor plans + all exports = Polycam Business ($34/seat/mo).</b></figcaption>
+  </figure>
+  <figure class="gifcard">
+    <img src="assets/demo/clip3-annotate-furniture.gif" alt="Measure annotation and furniture catalog">
+    <figcaption>Measure on-plan, place furniture from the catalog. <b>Annotation: Business tier; furniture labeling: paid everywhere.</b></figcaption>
+  </figure>
+  <figure class="gifcard">
+    <img src="assets/demo/clip4-icloud.gif" alt="Settings with iCloud sync section">
+    <figcaption>Opt-in iCloud sync in Settings. <b>magicplan: $25–40 per project beyond two, ever.</b></figcaption>
+  </figure>
+</div>
+<p class="gifnote">clips recorded on the iPhone 17 Pro simulator with seeded plans — scanning itself needs LiDAR hardware</p>
+
+<h2>Capture</h2><div class="rule"></div>
+<div class="grid">
+  <div class="ve-card"><h3>LiDAR Room Scanning</h3><p>Walk the room; walls, doors, windows outline live with counts, confidence warnings, and an elapsed timer. Optional GPS address tagging.</p></div>
+  <div class="ve-card"><h3>Scan Quality Gate</h3><p>0–100 score after every scan: confidence breakdown, wall-closure check, surface counts, rescan-or-continue.</p></div>
+  <div class="ve-card"><h3>Scan Post-Processing</h3><p>Configurable wall straightening, corner snapping, duplicate-wall merging — tuned in Settings.</p></div>
+  <div class="ve-card"><span class="new">NEW</span><h3>Multi-Room Merge</h3><p>Scan room by room; align each new scan by hand — live drag, 90°/5° rotate, one-tap endpoint snap — then merge into one floor.</p><div class="pay">auto-stitch is the #1 complaint about every rival; RoomScan loses doors on join</div></div>
+  <div class="ve-card"><span class="new">NEW</span><h3>Multi-Floor Plans</h3><p>One plan, many floors: switcher in the control bar, scan straight into a new floor, archives and reports carry every floor.</p><div class="pay">no competitor does whole-house reliably at any price</div></div>
+</div>
+
+<h2>Plan &amp; Edit</h2><div class="rule"></div>
+<div class="grid">
+  <div class="ve-card"><h3>2D Architectural Plans</h3><p>Section-cut wall rendering, door arcs and window panes, dimension overlays in metric or feet-inches, compass, scale bar.</p></div>
+  <div class="ve-card"><h3>2D Edit Mode</h3><p>Select, move, straighten, merge corners, merge walls, add, delete — full undo/redo, per-wall colors, snap-to-axis HUD.</p></div>
+  <div class="ve-card"><span class="new">NEW</span><h3>Measure &amp; Annotate</h3><p>Tap-tap dimension lines with draggable endpoints, free-text notes, room labels with auto-computed areas (<code>Bedroom · 14.2 m²</code>).</p><div class="pay">Polycam: Business tier · RoomScan: Apple Pencil only</div></div>
+  <div class="ve-card"><span class="new">NEW</span><h3>Furniture Layer</h3><p>Scan-detected furniture renders as architectural footprints; place more from a 16-category catalog — move, rotate, resize, toggle.</p><div class="pay">furniture/fixture layers are paid in all five competitors</div></div>
+  <div class="ve-card"><h3>Layout Editor (Mac mini-CAD)</h3><p>Draft plans with no scan: constraint solver (lengths, H/V, parallel, perpendicular, angles), room wizard ("Kitchen 4x4 east of Living"), trim/extend, fillet/chamfer, typed dimensions, crash recovery.</p><div class="free">drafts export through every pipeline a scan can</div></div>
+</div>
+
+<h2>3D</h2><div class="rule"></div>
+<div class="grid">
+  <div class="ve-card"><h3>3D Model Viewer</h3><p>SceneKit walkthrough with color-coded surfaces, custom furniture meshes, top-view snap, and 3D edit (move/resize/delete objects).</p></div>
+  <div class="ve-card"><h3>Object Inspector</h3><p>Tap any surface or furnishing: dimensions, surface area, confidence, world position, inferred sub-type ("L-Shaped Sofa").</p></div>
+  <div class="ve-card"><span class="new">UPDATED</span><h3>Parametric 3D</h3><p>Adjustable ceiling/door/window heights with per-wall overrides, flat or vaulted ceilings, mitered corners, ray-traced-look mode — now with placed furniture as scaled boxes.</p></div>
+</div>
+
+<h2>Export — all free, all local</h2><div class="rule"></div>
+<div class="grid">
+  <div class="ve-card"><h3>PDF + DXF</h3><p>A4 architectural drawing (now with annotations + furniture) and DXF R12 with WALLS/DOORS/WINDOWS/<code>ANNOTATIONS</code>/<code>FURNITURE</code> layers.</p><div class="pay">DXF: paid in Polycam, magicplan, CubiCasa (+$50/scan)</div></div>
+  <div class="ve-card"><span class="new">NEW</span><h3>Plan Report</h3><p>Multi-page PDF: cover with summary stats and a rendered plan, then room / wall / door-window schedules — a section per floor.</p><div class="pay">CubiCasa: per-report fee · magicplan Report tier: $39.99/mo</div></div>
+  <div class="ve-card"><h3>USDZ + GLB + STEP</h3><p>AR Quick Look, web-ready glTF, and ISO 10303-21 B-Rep STEP with mitered corners and door/window cutouts — real CAD geometry, not a mesh dump.</p><div class="pay">3D exports: Business/paid tiers everywhere; STEP almost nowhere</div></div>
+  <div class="ve-card"><h3>.floorplan Archives</h3><p>Zip-based plan exchange via share sheet, Files, AirDrop — iOS ↔ macOS, floors included, no cloud required.</p></div>
+</div>
+
+<h2>Platform</h2><div class="rule"></div>
+<div class="grid">
+  <div class="ve-card"><h3>macOS Companion</h3><p>Open, edit (2D + parametric), and export saved plans on the Mac; import .floorplan archives; Layout editor lives here.</p></div>
+  <div class="ve-card"><span class="new">NEW</span><h3>Native iPad</h3><p>Sidebar split view (no compatibility mode), keyboard shortcuts (⌘N ⌘E ⌘1–4 ⌘Z), trackpad hover, LiDAR scanning on iPad Pro.</p></div>
+  <div class="ve-card"><span class="new">NEW</span><h3>iCloud Sync — opt-in</h3><p>One Settings switch moves the library into iCloud Drive; plans appear on iPhone, iPad, and Mac. Off again = everything back on-device. Availability-gated, resumable migration.</p><div class="pay">rivals: subscriptions or per-project fees for cross-device</div></div>
+  <div class="ve-card"><span class="new">NEW</span><h3>Dark Mode &amp; Accessibility</h3><p>Scheme-aware plan rendering, VoiceOver-labeled tools and cards, Dynamic Type, Reduce Motion/Transparency, Increase Contrast, non-color selection cues.</p></div>
+  <div class="ve-card"><h3>Onboarding</h3><p>4-page first-run tour ending on the promise that is the product: <em>private by design</em>. Replayable from Settings.</p></div>
+</div>
+
+<footer>
+  <span><a href="index.html" style="color:inherit">Home</a> · <a href="privacy.html" style="color:inherit">Privacy</a> · <a href="support.html" style="color:inherit">Support</a></span>
+  <span>© 2026 Abhijit Bansal</span>
+</footer>
+
+</div>
+</body>
+</html>
