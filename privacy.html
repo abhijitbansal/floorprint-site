@@ -8,40 +8,42 @@
   <link rel="icon" type="image/png" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; object-src 'none'; form-action 'none'; base-uri 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; object-src 'none'; form-action 'none'; base-uri 'self'">
 </head>
 <body>
-  <header class="site">
+<div class="wrap-narrow">
+
+  <nav class="site">
     <img src="assets/app-icon-64.png" alt="">
     <span class="name">Floorprint</span>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="features.html">Features</a>
-      <a href="privacy.html" aria-current="page">Privacy</a>
-      <a href="support.html">Support</a>
-    </nav>
-  </header>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="privacy.html" aria-current="page">Privacy</a>
+    <a href="support.html">Support</a>
+  </nav>
 
   <main>
-    <h1>Privacy Policy</h1>
-    <p class="muted small">Last updated: 11 June 2026</p>
+    <header class="page">
+      <div class="kicker">Floorprint · privacy</div>
+      <h1>Your home's layout is <em>nobody's data</em>.</h1>
+      <p class="lead">
+        Floorprint is a room-scanning app for iPhone, with a macOS companion,
+        that generates floor plans and 3D models. This page describes what
+        data Floorprint handles and what it does with it. The short version:
+        <b>your scans, plans, and measurements never leave your device unless
+        you explicitly share them.</b>
+      </p>
+      <p class="mono">Last updated: 11 June 2026</p>
+    </header>
 
-    <p class="lead">
-      Floorprint is a room-scanning app for iPhone, with a macOS companion,
-      that generates floor plans and 3D models. This page describes what
-      data Floorprint handles and what it does with it. The short version:
-      your scans, plans, and measurements never leave your device unless
-      you explicitly share them.
-    </p>
-
-    <h2>What Floorprint collects</h2>
+    <h2>What Floorprint collects</h2><div class="rule"></div>
     <p>
       <strong>Nothing.</strong> Floorprint has no accounts, no analytics,
       no crash-reporting SDK, no advertising identifiers, and no
       third-party SDKs. The developer receives no data from the app.
     </p>
 
-    <h2>Where your plans live</h2>
+    <h2>Where your plans live</h2><div class="rule"></div>
     <p>
       Floor plans are saved as files in the app's Documents folder on your
       device. They are not synced, uploaded, or transmitted anywhere by
@@ -57,7 +59,7 @@
       Apple's privacy policy, not ours.
     </p>
 
-    <h2>Camera and LiDAR access</h2>
+    <h2>Camera and LiDAR access</h2><div class="rule"></div>
     <p>
       Floorprint requests camera access to scan rooms. Scanning uses
       Apple's RoomPlan framework, which processes camera and LiDAR data
@@ -66,7 +68,7 @@
       transmitted.
     </p>
 
-    <h2>Location access (optional)</h2>
+    <h2>Location access (optional)</h2><div class="rule"></div>
     <p>
       If you enable address tagging, Floorprint requests "While Using"
       location access to attach a street address to a scan. To turn
@@ -78,34 +80,34 @@
       everything else works the same.
     </p>
 
-    <h2>Motion access</h2>
+    <h2>Motion access</h2><div class="rule"></div>
     <p>
       Floorprint requests motion access to capture room orientation
       relative to true north during a scan. Motion data is processed
       on-device and discarded.
     </p>
 
-    <h2>On-device processing</h2>
+    <h2>On-device processing</h2><div class="rule"></div>
     <p>
       All geometry processing — floor plan generation, 3D model
       construction, quality scoring, and every export format — runs on
       your device. There is no server-side component.
     </p>
 
-    <h2>Children</h2>
+    <h2>Children</h2><div class="rule"></div>
     <p>
       Floorprint is rated 4+. It does not collect any information from
       anyone, so it does not collect information from children either.
     </p>
 
-    <h2>Changes</h2>
+    <h2>Changes</h2><div class="rule"></div>
     <p>
       If a future version of Floorprint changes what data it handles, this
       policy will be updated and the "Last updated" date revised before
       that version ships.
     </p>
 
-    <h2>Contact</h2>
+    <h2>Contact</h2><div class="rule"></div>
     <p>
       Questions about privacy can be sent to
       <a href="mailto:contact@abhijitbansal.com">contact@abhijitbansal.com</a>.
@@ -113,9 +115,10 @@
   </main>
 
   <footer class="site">
+    <span><a href="index.html">Home</a> · <a href="features.html">Features</a> · <a href="support.html">Support</a></span>
     <span>© 2026 Abhijit Bansal</span>
-    <a href="privacy.html">Privacy</a>
-    <a href="support.html">Support</a>
   </footer>
+
+</div>
 </body>
 </html>

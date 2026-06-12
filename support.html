@@ -8,28 +8,32 @@
   <link rel="icon" type="image/png" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; object-src 'none'; form-action 'none'; base-uri 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; object-src 'none'; form-action 'none'; base-uri 'self'">
 </head>
 <body>
-  <header class="site">
+<div class="wrap-narrow">
+
+  <nav class="site">
     <img src="assets/app-icon-64.png" alt="">
     <span class="name">Floorprint</span>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="features.html">Features</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="support.html" aria-current="page">Support</a>
-    </nav>
-  </header>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="support.html" aria-current="page">Support</a>
+  </nav>
 
   <main>
-    <h1>Support</h1>
-    <p class="lead">
-      Scan rooms with LiDAR, get accurate floor plans, export to
-      professional CAD formats — all on your iPhone.
-    </p>
+    <header class="page">
+      <div class="kicker">Floorprint · support</div>
+      <h1>Stuck? <em>Let's fix it.</em></h1>
+      <p class="lead">
+        Scan rooms with LiDAR, get accurate floor plans, export to
+        professional CAD formats — all on your iPhone. Answers to the
+        common questions below; everything else by email.
+      </p>
+    </header>
 
-    <h2>Frequently asked questions</h2>
+    <h2>Frequently asked questions</h2><div class="rule"></div>
 
     <h3>How do I scan a room?</h3>
     <p>
@@ -95,7 +99,7 @@
       Slower scans with good lighting recognize more.
     </p>
 
-    <h2>Report a problem</h2>
+    <h2>Report a problem</h2><div class="rule"></div>
     <p>
       Email <a href="mailto:contact@abhijitbansal.com">contact@abhijitbansal.com</a>
       with your iPhone model, iOS version, and what happened. Screenshots
@@ -104,9 +108,10 @@
   </main>
 
   <footer class="site">
+    <span><a href="index.html">Home</a> · <a href="features.html">Features</a> · <a href="privacy.html">Privacy</a></span>
     <span>© 2026 Abhijit Bansal</span>
-    <a href="privacy.html">Privacy</a>
-    <a href="support.html">Support</a>
   </footer>
+
+</div>
 </body>
 </html>

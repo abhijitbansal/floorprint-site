@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; object-src 'none'; form-action 'none'; base-uri 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; object-src 'none'; form-action 'none'; base-uri 'self'">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Floorprint">
   <meta property="og:title" content="Floorprint — LiDAR scan to CAD floor plan">
@@ -20,49 +20,54 @@
   <meta name="twitter:image" content="https://abhijitbansal.github.io/floorprint-site/assets/demo/clip2-plan-exports.gif">
 </head>
 <body>
-  <header class="site">
+<div class="wrap">
+
+  <nav class="site">
     <img src="assets/app-icon-64.png" alt="">
     <span class="name">Floorprint</span>
-    <nav>
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="features.html">Features</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="support.html">Support</a>
-    </nav>
-  </header>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="features.html">Features</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="support.html">Support</a>
+  </nav>
 
   <main>
-    <div class="hero">
-      <img src="assets/app-icon-180.png" alt="Floorprint app icon">
-      <div>
-        <h1>Floorprint</h1>
-        <p class="lead">LiDAR scan to CAD floor plan — all on your iPhone.</p>
-      </div>
+    <header class="page">
+      <div class="kicker">Floorprint · for iPhone, iPad &amp; Mac</div>
+      <h1>Walk a room.<br>Leave with a <em>floor plan</em>.</h1>
+      <p class="lead">LiDAR scan to CAD-grade floor plan in one 60-second walk — <b>free, no accounts, processing never leaves the device.</b></p>
+    </header>
+
+    <p>
+      <a class="cta" href="features.html">See every feature →</a>
+    </p>
+
+    <h2>What it does</h2><div class="rule"></div>
+    <div class="grid">
+      <div class="ve-card"><h3>Scan in one walk</h3><p>Walls, doors, and windows appear live as you move, with a 0–100 quality score when you finish.</p></div>
+      <div class="ve-card"><h3>Real 2D floor plans</h3><p>Accurate dimensions, metric or imperial, with on-canvas editing — move, straighten, merge, undo.</p></div>
+      <div class="ve-card"><h3>Interactive 3D</h3><p>Color-coded surfaces, recognized furniture, tap-to-inspect dimensions, adjustable ceiling and window heights.</p></div>
+      <div class="ve-card"><h3>Pro exports</h3><p>PDF, DXF, STEP (real CAD solids with door/window cutouts), USDZ for AR, and GLB.</p></div>
+      <div class="ve-card"><h3>Private by architecture</h3><p>Your home's layout stays on your device. No uploads, no analytics, no tracking.</p></div>
+      <div class="ve-card"><h3>Mac companion</h3><p>Open, edit, and export saved plans on your Mac — or draft plans from scratch in the Layout editor.</p></div>
     </div>
 
-    <p>
-      Floorprint turns a 60-second walk around a room into an accurate,
-      editable floor plan — and exports it in the formats professionals
-      actually use. Scanning, geometry processing, and every export run
-      entirely on your iPhone. No accounts. No cloud. No subscription.
-    </p>
-
-    <ul class="features">
-      <li><strong>Scan in one walk</strong>Walls, doors, and windows appear live as you move, with a 0–100 quality score when you finish.</li>
-      <li><strong>Real 2D floor plans</strong>Accurate dimensions, metric or imperial, with on-canvas editing — move, straighten, merge, undo.</li>
-      <li><strong>Interactive 3D</strong>Color-coded surfaces, recognized furniture, tap-to-inspect dimensions, adjustable ceiling and window heights.</li>
-      <li><strong>Pro exports</strong>PDF, DXF, STEP (real CAD solids with door/window cutouts), USDZ for AR, and GLB.</li>
-      <li><strong>Private by architecture</strong>Your home's layout stays on your device. No uploads, no analytics, no tracking.</li>
-      <li><strong>Mac companion</strong>Open, edit, and export saved plans on your Mac — or draft plans from scratch.</li>
-    </ul>
-
-    <p>
-      <a href="features.html"><strong>See every feature →</strong></a>
-      — with demos, and what other apps charge for.
-    </p>
+    <h2>See it work</h2><div class="rule"></div>
+    <div class="gifrow">
+      <figure class="gifcard">
+        <img src="assets/demo/clip2-plan-exports.gif" alt="Plan view modes and export menu">
+        <figcaption>2D → parametric → 3D, then the export menu.</figcaption>
+      </figure>
+      <figure class="gifcard">
+        <img src="assets/demo/clip3-annotate-furniture.gif" alt="Measure annotation and furniture catalog">
+        <figcaption>Measure on-plan, place furniture from the catalog.</figcaption>
+      </figure>
+    </div>
+    <p class="gifnote">clips recorded on the iPhone 17 Pro simulator with seeded plans — scanning itself needs LiDAR hardware</p>
 
     <p>
       <strong>Requirements:</strong> iPhone or iPad Pro with a LiDAR scanner, iOS 18.6+.
+      Mac companion requires macOS 15+.
     </p>
 
     <p class="muted small">
@@ -71,9 +76,10 @@
   </main>
 
   <footer class="site">
+    <span><a href="features.html">Features</a> · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></span>
     <span>© 2026 Abhijit Bansal</span>
-    <a href="privacy.html">Privacy</a>
-    <a href="support.html">Support</a>
   </footer>
+
+</div>
 </body>
 </html>
